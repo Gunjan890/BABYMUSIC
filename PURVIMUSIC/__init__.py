@@ -13,7 +13,7 @@ dirr()
 git()
 dbb()
 heroku()
-app = VIPBot()
+app = PURVIBot()
 from .platforms import *
 
 YouTube = YouTubeAPI()
