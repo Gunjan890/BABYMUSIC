@@ -13,8 +13,6 @@ dirr()
 git()
 dbb()
 heroku()
-sudo()
-vipboy()
 
 app = SafoneAPI()
 
