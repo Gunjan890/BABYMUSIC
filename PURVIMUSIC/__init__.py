@@ -13,6 +13,7 @@ dirr()
 git()
 dbb()
 heroku()
+SafoneAPI()
 
 from .platforms import *
 
