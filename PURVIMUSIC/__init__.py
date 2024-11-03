@@ -4,7 +4,6 @@ from PURVIMUSIC.core.git import git
 from PURVIMUSIC.core.userbot import Userbot
 from PURVIMUSIC.misc import dbb, heroku
 
-from SafoneAPI import SafoneAPI
 from .logging import LOGGER
 
 dirr()
