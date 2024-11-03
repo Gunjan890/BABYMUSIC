@@ -14,8 +14,6 @@ git()
 dbb()
 heroku()
 
-userbot = Userbot()
-
 from .platforms import *
 
 YouTube = YouTubeAPI()
