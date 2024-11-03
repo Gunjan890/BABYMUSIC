@@ -14,6 +14,8 @@ git()
 dbb()
 heroku()
 app = PURVIBot()
+userbot = Userbot()
+
 from .platforms import *
 
 YouTube = YouTubeAPI()
