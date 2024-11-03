@@ -14,8 +14,6 @@ git()
 dbb()
 heroku()
 
-app = SafoneAPI()
-
 userbot = Userbot()
 
 from .platforms import *
