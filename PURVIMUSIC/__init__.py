@@ -1,28 +1,28 @@
-import json
-import os
-
 from PURVIMUSIC.core.bot import PURVI
 from PURVIMUSIC.core.dir import dirr
 from PURVIMUSIC.core.git import git
 from PURVIMUSIC.core.userbot import Userbot
 from PURVIMUSIC.misc import dbb, heroku
 
+from SafoneAPI import SafoneAPI
 from .logging import LOGGER
 
 dirr()
 git()
 dbb()
 heroku()
-app = PURVIBot()
+
+app = PURVI()
+api = SafoneAPI()
 userbot = Userbot()
+
 
 from .platforms import *
 
-YouTube = YouTubeAPI()
-Carbon = CarbonAPI()
-Spotify = SpotifyAPI()
 Apple = AppleAPI()
-Resso = RessoAPI()
+Carbon = CarbonAPI()
 SoundCloud = SoundAPI()
+Spotify = SpotifyAPI()
+Resso = RessoAPI()
 Telegram = TeleAPI()
-HELPABLE = {}
+YouTube = YouTubeAPI()
