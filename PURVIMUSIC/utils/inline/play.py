@@ -71,7 +71,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 text="⛦ ᴏᴡɴᴇʀ ❥", url=f"https://t.me/II_apna_gunjan_II"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/+YOIkTivyXMgxNzFl"
+                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/PURVI_SUPPORT"
             )
         ],
          [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -93,7 +93,7 @@ def stream_markup(_, chat_id):
                 text="⛦ ᴏᴡɴᴇʀ ❥", url=f"https://t.me/II_apna_gunjan_II"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/+YOIkTivyXMgxNzFl"
+                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/PURVI_SUPPORT"
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
