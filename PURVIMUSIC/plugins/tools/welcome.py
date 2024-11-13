@@ -90,17 +90,12 @@ async def greet_new_member(_, member: ChatMemberUpdated):
     
     try:
         # Welcome message
-        welcome_message = f"**❅────✦ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ✦────❅**
-{member.chat.title}
-**▰▰▰▰▰▰▰▰▰▰▰▰▰
-➻ Nᴀᴍᴇ ✧ {user.mention}
-➻ Iᴅ ✧ {user.id}
-➻ Usᴇʀɴᴀᴍᴇ ✧ @{user.username}
-➻ Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs ✧ {count}
- 🇲 ᴀᴅᴇ 🇧ʏ 🇬𝐮𝐧𝐣𝐚𝐧🐬 🇸𝐢𝐧𝐠𝐡🐬 
-▰▰▰▰▰▰▰▰▰▰▰▰▰**
-**❅─────✧❅✦❅✧─────❅**
-"
+        welcome_message = f"**👋 {user.mention}, Wᴇʟᴄᴏᴍᴇ Tᴏ {member.chat.title}!\n\n" \
+                          "• I Hᴏᴘᴇ Yᴏᴜ Aʀᴇ Fɪɴᴇ!\n\n" \
+                          "• Pʟᴇᴀsᴇ Aʟᴡᴀʏs Fᴏʟʟᴏᴡ Tʜᴇ Gʀᴏᴜᴘ Rᴜʟᴇs!\n" \
+                          "────────────────────\n" \
+                          f"ᴛ ᴏ ᴛ ᴀ ʟ ᴍ ᴇ ᴍ ʙ ᴇ ʀ: {count}\n" \
+                          "────────────────────**"
         
         # Creating an inline button to "Join 👋" with the link
         keyboard = InlineKeyboardMarkup(
@@ -111,4 +106,3 @@ async def greet_new_member(_, member: ChatMemberUpdated):
         await app.send_message(chat_id, welcome_message, reply_markup=keyboard)
     except Exception as e:
         LOGGER.error(f"Error sending welcome message: {e}")
-
